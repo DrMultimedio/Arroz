@@ -1,0 +1,15 @@
+.boton_centrado{
+	  margin: 0 auto;
+}
+.contenedor_centrado{
+  text-align: center;
+  vertical-align: center;
+}
+.contenedor_centrado_total{
+    padding: 7em 0 0em 0;
+    text-align: center;
+}
+img{
+	height:150px;
+	width: 200px;
+}
