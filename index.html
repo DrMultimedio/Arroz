@@ -34,10 +34,10 @@
     <img src="aloz.png">
     <p class="">Pon la misma cantidad de arroz que de agua en una olla o cazo</p>
     <a href="#pagethree" data-transition="slide" class="ui-btn">Siguiente paso</a>
-    <a href="#pageone" data-transition="slide" class="ui-btn">Paso anterior</a>
+    <a href="#pageone" data-transition="slide" class="ui-btn" data-direction="reverse">Paso anterior</a>
 
   </div>
-</div>
+</div> data-direction="reverse"
 
 <div data-role="page" id="pagethree">
   <div data-role="header">
@@ -50,12 +50,59 @@
     <div class= "counter" id="fuegofuerte">
       <button class="ui-btn contador" id="boton_fuerte">Comenzar a hervir</button>
     </div>
-    <a href="#pagethree" data-transition="slide" class="ui-btn" id="sig_paso_fuerte">Siguiente paso</a>
-    <a href="#pagetwo" data-transition="slide" class="ui-btn">Paso anterior</a>
+    <a href="#pagefour" data-transition="slide" class="ui-btn" id="sig_paso_fuerte">Siguiente paso</a>
+    <a href="#pagetwo" data-transition="slide" class="ui-btn" data-direction="reverse">Paso anterior</a>
 
   </div>
 </div>
 
+<div data-role="page" id="pagefour">
+  <div data-role="header">
+    <h1>Dat arrocito</h1>
+  </div>
+
+  <div data-role="main" class="ui-content contenedor_centrado_total" >
+    <img src="aloz.png">
+    <p class="">Baja el fuego al mínimo durante <span class="bold">6 minutos</span></p>
+    <div class= "counter" id="fuegoflojo">
+      <button class="ui-btn contador" id="boton_flojo">Iniciar contador</button>
+    </div>
+    <a href="#pagefive" data-transition="slide" class="ui-btn" id="sig_paso_fuerte">Siguiente paso</a>
+    <a href="#pagethree" data-transition="slide" class="ui-btn" data-direction="reverse">Paso anterior</a>
+
+  </div>
+</div>
+
+<div data-role="page" id="pagefive">
+  <div data-role="header">
+    <h1>Dat arrocito</h1>
+  </div>
+
+  <div data-role="main" class="ui-content contenedor_centrado_total" >
+    <img src="aloz.png">
+    <p class="">Apaga el fuego y deja el arroz reposar <span class="bold">10 minutos</span></p>
+    <div class= "counter" id="reposar">
+      <button class="ui-btn contador" id="boton_reposar">Iniciar contador</button>
+    </div>
+    <a href="#pagesix" data-transition="slide" class="ui-btn" id="sig_paso_fuerte">Siguiente paso</a>
+    <a href="#pagefour" data-transition="slide" class="ui-btn" data-direction="reverse">Paso anterior</a>
+
+  </div>
+</div>
+
+<div data-role="page" id="pagesix">
+  <div data-role="header">
+    <h1>Dat arrocito</h1>
+  </div>
+
+  <div data-role="main" class="ui-content contenedor_centrado_total" >
+    <img src="aloz.png">
+    <p class=""><span class="bold">¡Disfruta del arroz!</span></p>
+    <a href="#pageone" data-transition="slide" class="ui-btn" id="sig_paso_fuerte" data-direction="reverse">¿Volver a empezar?</a>
+    <a href="#pagefive" data-transition="slide" class="ui-btn" data-direction="reverse">Paso anterior</a>
+
+  </div>
+</div>
 
 </body>
 </html>
